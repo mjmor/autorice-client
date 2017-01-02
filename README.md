@@ -6,8 +6,8 @@ i3autorice will be able to automatically retrieve and configure i3 desktops from
 
 Website will offer a voting system and an interface for easily sharing all dotfiles associated with your rice.
 
-Language: TBD
+Language: Python 3, Bash
 
-Website stack: TBD
+Website stack: Ruby on Rails, PostgreSQL
 
 IRC channel at Freenode: ##i3autorice
