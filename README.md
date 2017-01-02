@@ -9,3 +9,5 @@ Website will offer a voting system and an interface for easily sharing all dotfi
 Language: TBD
 
 Website stack: TBD
+
+IRC channel at Freenode: ##i3autorice
