@@ -7,4 +7,5 @@ i3autorice will be able to automatically retrieve and configure i3 desktops from
 Website will offer a voting system and an interface for easily sharing all dotfiles associated with your rice.
 
 Language: TBD
+
 Website stack: TBD
