@@ -13,6 +13,7 @@ class Autorice:
     def __init__(self):
         self._arg_parser = self.get_arg_parser()
         self.args = None
+        self.logger = logging.getLogger(__name__)
 
     def run(self):
         self.args = self._arg_parser.parse_args()
@@ -29,12 +30,16 @@ class Autorice:
         Create an argument parser instance
         :return: argparse.ArgumentParser
         """
-        parser = argparse.ArgumentParser()
+        parser = argparse.ArgumentParser(description="""
+            autoRice is an automatic configuration file manager allowing you to
+            check out sweet rices with a single command.
+            """)
         parser.set_defaults(action=parser.print_help)
         sp = parser.add_subparsers(title='subcommands')
 
         # region parser_install
-        parser_install = sp.add_parser('install', help='Install a rice.')
+        parser_install = sp.add_parser('install', help='Install a rice.',
+                                       aliases=['rice'])
         parser_install.add_argument('rice', type=str,
                                     help="Name of the rice to install.",
                                     nargs='+')
